@@ -1,6 +1,6 @@
 (ns colorpie-renderer.core)
 
-(def canvas (.getElementById js/document "drawing1"))
+(def canvas (.getElementById js/document "canvas"))
 (def ctx (.getContext canvas "2d"))
 
 (set! (.-fillStyle ctx) "rgb(255,0,0)")
