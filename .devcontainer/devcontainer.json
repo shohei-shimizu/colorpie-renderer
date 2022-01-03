@@ -4,5 +4,6 @@
     "workspaceFolder": "/",
     "extensions": [
         "betterthantomorrow.calva"
-    ]
+    ],
+    "remoteUser": "vscode"
 }
