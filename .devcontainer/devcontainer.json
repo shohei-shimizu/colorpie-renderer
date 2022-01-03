@@ -1,0 +1,11 @@
+{
+    "name": "clojure-script",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "app",
+    "workspaceFolder": "/",
+    "extensions": [
+        "avli.clojure"
+    ]
+}
