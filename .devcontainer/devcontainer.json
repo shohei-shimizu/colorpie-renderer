@@ -1,11 +1,8 @@
 {
     "name": "clojure-script",
-    "dockerComposeFile": [
-        "docker-compose.yml"
-    ],
-    "service": "app",
+    "image": "clojure",
     "workspaceFolder": "/",
     "extensions": [
-        "avli.clojure"
+        "betterthantomorrow.calva"
     ]
 }
