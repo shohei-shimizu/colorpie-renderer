@@ -1,6 +1,6 @@
 (ns colorpie-renderer.nodes)
 
-;; Bases are union for Nodes.
+;; Bases are union for Nodes. It is standard 5 elements which is base for 10 nodes.
 (defrecord Bases [name nodes colors coordinate])
 
 (defrecord Nodes [name colors coordinate])
@@ -11,6 +11,7 @@
 ;; Center-nodes are special Intersection-nodes that are opposition of each Nodes.
 (defrecord Center-nodes [name colors coordinate])
 
+;; ---- Nodes instances ----
 ;; Define each 10 nodes about name, colors, and coordinate.
 (def consideration
   (map->Nodes
@@ -72,7 +73,7 @@
     :colors '(::green)
     :coordinate '(0 0)}))
 
-;; Define instances of Intersection-nodes.
+;; ---- Intersection-nodes instances ----
 (def construction
   (map->Intersection-nodes
    {:name "設計"
@@ -319,3 +320,5 @@
    {:name "臨床"
     :colors '(::red ::white)
     :coordinate '(0 0)}))
+
+;; ---- Bases instances ----
