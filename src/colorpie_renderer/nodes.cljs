@@ -3,10 +3,10 @@
 ;; Basis are union for Nodes. It is standard 5 elements which is base for 10 nodes.
 (defrecord Basis [name nodes colors coordinate])
 
-(defrecord Nodes [name colors coordinate])
+(defrecord Nodes [name colors interrogatives coordinate])
 
 ;; Intersection-nodes are composition for double Nodes.
-(defrecord Intersection-nodes [name colors coordinate])
+(defrecord Intersection-nodes [name colors interrogatives coordinate])
 
 ;; ---- Nodes instances ----
 ;; Define each 10 nodes about name, colors, and coordinate.
@@ -14,6 +14,7 @@
   (map->Nodes
    {:name "配慮"
     :colors [::white]
+    :interrogatives [::who]
     :coordinate [0 0]}))
 
   (def method
