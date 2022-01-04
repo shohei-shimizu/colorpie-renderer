@@ -322,3 +322,8 @@
     :coordinate '(0 0)}))
 
 ;; ---- Bases instances ----
+(def peace
+  (map->Bases
+   {:name "平和"
+    :nodes '(consideration method)
+    :coordinate '(0 0)}))
