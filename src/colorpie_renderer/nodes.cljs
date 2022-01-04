@@ -17,12 +17,12 @@
     :interrogative ::who
     :coordinate [0 0]}))
 
-  (def method
-    (map->Nodes
-     {:name "定石"
-      :colors [::white]
-      :interrogative ::how
-      :coordinate [0 0]}))
+(def method
+  (map->Nodes
+   {:name "定石"
+    :colors [::white]
+    :interrogative ::how
+    :coordinate [0 0]}))
 
 (def reason
   (map->Nodes
