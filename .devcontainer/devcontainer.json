@@ -3,6 +3,14 @@
     "image": "clojure",
     "workspaceFolder": "/",
     "extensions": [
-        "avli.clojure"
-    ]
+        "betterthantomorrow.calva"
+    ],
+    "settings": {
+        "calva.jokerPath": "/usr/bin",
+        "calva.autoAdjustIndent": true,
+        "calva.lintOnSave": true,
+        "editor.tabSize": 2,
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+    }
 }
