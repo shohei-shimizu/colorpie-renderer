@@ -72,6 +72,7 @@
     :colors '(::green)
     :coordinate '(0 0)}))
 
+;; Define instances of Intersection-nodes.
 (def construction
   (map->Intersection-nodes
    {:name "設計"
