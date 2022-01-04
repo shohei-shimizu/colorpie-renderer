@@ -328,3 +328,31 @@
     :nodes [consideration method]
     :colors [::white]
     :coordinate [0 0]}))
+
+(def perfection
+  (map->Bases
+   {:name "完全"
+    :nodes [consideration method]
+    :colors [::blue]
+    :coordinate [0 0]}))
+
+(def power
+  (map->Bases
+   {:name "実力"
+    :nodes [consideration method]
+    :colors [::black]
+    :coordinate [0 0]}))
+
+(def freedom
+  (map->Bases
+   {:name "自由"
+    :nodes [consideration method]
+    :colors [::red]
+    :coordinate [0 0]}))
+
+(def acceptance
+  (map->Bases
+   {:name "受容"
+    :nodes [consideration method]
+    :colors [::green]
+    :coordinate [0 0]}))
