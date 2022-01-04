@@ -1,7 +1,7 @@
 (ns colorpie-renderer.nodes)
 
 ;; Bases are union for Nodes.
-(defrecord Bases [name nodes coordinate])
+(defrecord Bases [name nodes colors coordinate])
 
 (defrecord Nodes [name colors coordinate])
 
