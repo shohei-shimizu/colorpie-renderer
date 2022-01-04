@@ -1,7 +1,7 @@
 (ns colorpie-renderer.nodes)
 
-;; Bases are union for Nodes. It is standard 5 elements which is base for 10 nodes.
-(defrecord Bases [name nodes colors coordinate])
+;; Basis are union for Nodes. It is standard 5 elements which is base for 10 nodes.
+(defrecord Basis [name nodes colors coordinate])
 
 (defrecord Nodes [name colors coordinate])
 
@@ -321,37 +321,37 @@
     :colors [::red ::white]
     :coordinate [0 0]}))
 
-;; ---- Bases instances ----
+;; ---- Basis instances ----
 (def peace
-  (map->Bases
+  (map->Basis
    {:name "平和"
     :nodes [consideration method]
     :colors [::white]
     :coordinate [0 0]}))
 
 (def perfection
-  (map->Bases
+  (map->Basis
    {:name "完全"
     :nodes [consideration method]
     :colors [::blue]
     :coordinate [0 0]}))
 
 (def power
-  (map->Bases
+  (map->Basis
    {:name "実力"
     :nodes [consideration method]
     :colors [::black]
     :coordinate [0 0]}))
 
 (def freedom
-  (map->Bases
+  (map->Basis
    {:name "自由"
     :nodes [consideration method]
     :colors [::red]
     :coordinate [0 0]}))
 
 (def acceptance
-  (map->Bases
+  (map->Basis
    {:name "受容"
     :nodes [consideration method]
     :colors [::green]
