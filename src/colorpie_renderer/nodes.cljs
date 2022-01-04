@@ -3,7 +3,7 @@
 ;; Basis are union for Nodes. It is standard 5 elements which is base for 10 nodes.
 (defrecord Basis [name nodes colors coordinate])
 
-(defrecord Nodes [name colors interrogatives coordinate])
+(defrecord Nodes [name colors interrogative coordinate])
 
 ;; Intersection-nodes are composition for double Nodes.
 (defrecord Intersection-nodes [name colors coordinate])
@@ -14,70 +14,70 @@
   (map->Nodes
    {:name "配慮"
     :colors [::white]
-    :interrogatives [::who]
+    :interrogative ::who
     :coordinate [0 0]}))
 
   (def method
     (map->Nodes
      {:name "定石"
       :colors [::white]
-      :interrogatives [::how]
+      :interrogative ::how
       :coordinate [0 0]}))
 
 (def reason
   (map->Nodes
    {:name "理性"
     :colors [::blue]
-    :interrogatives [::when]
+    :interrogative ::when
     :coordinate [0 0]}))
 
 (def becoming
   (map->Nodes
    {:name "実現"
     :colors [::blue]
-    :interrogatives [::what]
+    :interrogative ::what
     :coordinate [0 0]}))
 
 (def exploitment
   (map->Nodes
    {:name "利用"
     :colors [::black]
-    :interrogatives [::where]
+    :interrogative ::where
     :coordinate [0 0]}))
 
 (def self-interest
   (map->Nodes
    {:name "独尊"
     :colors [::black]
-    :interrogatives [::who]
+    :interrogative ::who
     :coordinate [0 0]}))
 
 (def casualness
   (map->Nodes
    {:name "即興"
     :colors [::red]
-    :interrogatives [::how]
+    :interrogative ::how
     :coordinate [0 0]}))
 
 (def frankness
   (map->Nodes
    {:name "率直"
     :colors [::red]
-    :interrogatives [::when]
+    :interrogative ::when
     :coordinate [0 0]}))
 
 (def inherency
   (map->Nodes
    {:name "生得"
     :colors [::green]
-    :interrogatives [::what]
+    :interrogative ::what
     :coordinate [0 0]}))
 
 (def harmony
   (map->Nodes
    {:name "調和"
     :colors [::green]
-    :interrogatives [::where]
+    :interrogative ::where
     :coordinate [0 0]}))
 
 ;; ---- Intersection-nodes instances ----
