@@ -1,12 +1,15 @@
 (ns colorpie-renderer.nodes)
 
 ;; Bases are union for Nodes.
-(defrecord Bases [name nodes coordinate])
+(defrecord Bases [name nodes colors coordinate])
 
 (defrecord Nodes [name colors coordinate])
 
 ;; Intersection-nodes are composition for double Nodes.
 (defrecord Intersection-nodes [name colors coordinate])
+
+;; Center-nodes are special Intersection-nodes that are opposition of each Nodes.
+(defrecord Center-nodes [name colors coordinate])
 
 ;; Define each 10 nodes about name, colors, and coordinate.
 (def consideration (map->Nodes {:name "配慮"
