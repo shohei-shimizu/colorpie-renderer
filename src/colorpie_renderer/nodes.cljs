@@ -71,3 +71,69 @@
    {:name "調和" 
     :colors '(::green) 
     :coordinate '(0 0)}))
+
+(def construction
+  (map->Intersection-nodes
+   {:name "設計"
+    :colors '(::white ::blue)
+    :coordinate '(0 0)}))
+
+(def conference
+  (map->Intersection-nodes
+   {:name "協議"
+    :colors '(::white ::blue)
+    :coordinate '(0 0)}))
+
+(def training
+  (map->Intersection-nodes
+   {:name "訓練"
+    :colors '(::white ::blue)
+    :coordinate '(0 0)}))
+
+(def manipulation
+  (map->Intersection-nodes
+   {:name "操作"
+    :colors '(::white ::blue)
+    :coordinate '(0 0)}))
+
+(def desire
+  (map->Intersection-nodes
+   {:name "志望"
+    :colors '(::white ::blue)
+    :coordinate '(0 0)}))
+
+(def calculation
+  (map->Intersection-nodes
+   {:name "計算"
+    :colors '(::white ::blue)
+    :coordinate '(0 0)}))
+
+(def reformation
+  (map->Intersection-nodes
+   {:name "改変"
+    :colors '(::white ::blue)
+    :coordinate '(0 0)}))
+
+(def unfetteredness
+  (map->Intersection-nodes
+   {:name "不羈"
+    :colors '(::white ::blue)
+    :coordinate '(0 0)}))
+
+(def craving
+  (map->Intersection-nodes
+   {:name "渇望"
+    :colors '(::white ::blue)
+    :coordinate '(0 0)}))
+
+(def challenge
+  (map->Intersection-nodes
+   {:name "挑戦"
+    :colors '(::white ::blue)
+    :coordinate '(0 0)}))
+
+(def delight
+  (map->Intersection-nodes
+   {:name "愉悦"
+    :colors '(::white ::blue)
+    :coordinate '(0 0)}))
