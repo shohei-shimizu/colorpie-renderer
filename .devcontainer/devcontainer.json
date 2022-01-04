@@ -3,6 +3,6 @@
     "image": "clojure",
     "workspaceFolder": "/",
     "extensions": [
-        "betterthantomorrow.calva"
-    ],
+        "avli.clojure"
+    ]
 }

@@ -2,6 +2,7 @@
 
 ;; Bases are union for Nodes.
 (defrecord Bases [name nodes coordinate])
+(->Bases 0 0 0)
 
 (defrecord Nodes [name colors coordinate])
 
