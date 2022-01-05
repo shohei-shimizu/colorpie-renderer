@@ -363,3 +363,7 @@
     :nodes [consideration method]
     :colors [::green]
     :coordinate [0 0]}))
+
+(defn test-instances [instances]
+  ;; write some expression here.
+  )
