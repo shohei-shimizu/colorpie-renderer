@@ -17,12 +17,12 @@
     :interrogative ::who
     :coordinate [0 0]}))
 
-  (def method
-    (map->Nodes
-     {:name "定石"
-      :colors [::white]
-      :interrogative ::how
-      :coordinate [0 0]}))
+(def method
+  (map->Nodes
+   {:name "定石"
+    :colors [::white]
+    :interrogative ::how
+    :coordinate [0 0]}))
 
 (def reason
   (map->Nodes
@@ -363,3 +363,7 @@
     :nodes [consideration method]
     :colors [::green]
     :coordinate [0 0]}))
+
+(defn test-instances [instances]
+  ;; write some expression here.
+  )
