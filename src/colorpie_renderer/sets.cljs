@@ -39,11 +39,11 @@
      map->Intersection-sets {:name "臨床"
                              :nodes [nodes/observation nodes/formation nodes/prudence nodes/adaption]})])
 
-(defn remove-some-colors [coll]
-  (let [f (fn [key-1 key-2] (not= (first (:colors key-1))
-                                  (first (:colors key-2))))
-        g (fn [x c] (filter #(f x %) c))
-        h (fn [c] (map #(g % c) c))]
+(defn remove-same-keys [key coll]
+  (let [f (fn [key-1 key-2] (not= (first (key key-1))
+                                  (first (key key-2))))
+        g (fn [x c] (into [] (concat [x] (filterv #(f x %) c))))
+        h (fn [c] (mapv #(g % c) c))]
     (h coll)))
 
-(def relation-sets (remove-some-colors nodes/nodes))
+(def relation-sets-nodes (remove-same-keys :colors nodes/nodes))
