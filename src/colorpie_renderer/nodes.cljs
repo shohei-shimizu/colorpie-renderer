@@ -57,165 +57,172 @@
          efficiency credit supply expediency ingenuity inspiration experiment inquiry sturdiness territory overwhelming preservation first-aid occasion bravery swift observation formation prudence adaption)
 (def intersection-nodes [(macros/def-nodes construction
                            map->Intersection-nodes
-                           {:name "設計" :colors [::white ::blue]})
+                           {:name "設計" :colors [::white ::blue] :interrogatives [::how ::when]})
 
                          (macros/def-nodes recommendation
                            map->Intersection-nodes
-                           {:name "奨励" :colors [::white ::blue]})
+                           {:name "奨励" :colors [::white ::blue] :interrogatives [::who ::what]})
 
                          (macros/def-nodes conference
                            map->Intersection-nodes
-                           {:name "協議" :colors [::white ::blue]})
+                           {:name "協議" :colors [::white ::blue] :interrogatives [::who ::when]})
 
                          (macros/def-nodes training
                            map->Intersection-nodes
-                           {:name "訓練" :colors [::white ::blue]})
+                           {:name "訓練" :colors [::white ::blue] :interrogatives [::how ::what]})
 
                          (macros/def-nodes manipulation
                            map->Intersection-nodes
-                           {:name "操作" :colors [::blue ::black]})
+                           {:name "操作" :colors [::blue ::black] :interrogatives [::what ::where]})
 
                          (macros/def-nodes desire
                            map->Intersection-nodes
-                           {:name "志望" :colors [::blue ::black]})
+                           {:name "志望" :colors [::blue ::black] :interrogatives [::when ::who]})
 
                          (macros/def-nodes calculation
                            map->Intersection-nodes
-                           {:name "計算" :colors [::blue ::black]})
+                           {:name "計算" :colors [::blue ::black] :interrogatives [::when ::where]})
 
                          (macros/def-nodes reformation
                            map->Intersection-nodes
-                           {:name "改変" :colors [::blue ::black]})
+                           {:name "改変" :colors [::blue ::black] :interrogatives [::what ::who]})
 
+                         ;; In here, "不羈" does not apear illustration. It's in just documentation.
+                         ;; It is "放縦" in illustration.
                          (macros/def-nodes unfetteredness
                            map->Intersection-nodes
-                           {:name "不羈" :colors [::black ::red]})
+                           {:name "不羈" :colors [::black ::red] :interrogatives [::who ::how]})
 
                          (macros/def-nodes craving
                            map->Intersection-nodes
-                           {:name "渇望" :colors [::black ::red]})
+                           {:name "渇望" :colors [::black ::red] :interrogatives [::where ::when]})
 
                          (macros/def-nodes challenge
                            map->Intersection-nodes
-                           {:name "挑戦" :colors [::black ::red]})
+                           {:name "挑戦" :colors [::black ::red] :interrogatives [::where ::how]})
 
                          (macros/def-nodes delight
                            map->Intersection-nodes
-                           {:name "愉悦" :colors [::black ::red]})
+                           {:name "愉悦" :colors [::black ::red] :interrogatives [::who ::when]})
 
+                         ;; This is "感触" in illustration.
                          (macros/def-nodes feelings
                            map->Intersection-nodes
-                           {:name "随感" :colors [::red ::green]})
+                           {:name "随感" :colors [::red ::green] :interrogatives [::when ::what]})
 
                          (macros/def-nodes emergence
                            map->Intersection-nodes
-                           {:name "創発" :colors [::red ::green]})
+                           {:name "創発" :colors [::red ::green] :interrogatives [::how ::where]})
 
                          (macros/def-nodes throbbing
                            map->Intersection-nodes
-                           {:name "躍動" :colors [::red ::green]})
+                           {:name "躍動" :colors [::red ::green] :interrogatives [::how ::what]})
 
+                         ;; This is "共感" in illustration.
                          (macros/def-nodes emphathize
                            map->Intersection-nodes
-                           {:name "震撼" :colors [::red ::green]})
+                           {:name "震撼" :colors [::red ::green] :interrogatives [::when ::where]})
 
                          (macros/def-nodes affection
                            map->Intersection-nodes
-                           {:name "親愛" :colors [::green ::white]})
+                           {:name "親愛" :colors [::green ::white] :interrogatives [::where ::who]})
 
                          (macros/def-nodes healthness
                            map->Intersection-nodes
-                           {:name "健康" :colors [::green ::white]})
+                           {:name "健康" :colors [::green ::white] :interrogatives [::what ::how]})
 
+                         ;; This is "親身" in illustration.
                          (macros/def-nodes dedication
                            map->Intersection-nodes
-                           {:name "献身" :colors [::green ::white]})
+                           {:name "献身" :colors [::green ::white] :interrogatives [::what ::who]})
 
                          (macros/def-nodes derivation
                            map->Intersection-nodes
-                           {:name "由緒" :colors [::green ::white]})
+                           {:name "由緒" :colors [::green ::white] :interrogatives [::where :how]})
 
                          (macros/def-nodes efficiency
                            map->Intersection-nodes
-                           {:name "効率" :colors [::white ::black]})
+                           {:name "効率" :colors [::white ::black] :interrogatives [::how ::where]})
 
                          (macros/def-nodes credit
                            map->Intersection-nodes
-                           {:name "信用" :colors [::white ::black]})
+                           {:name "信用" :colors [::white ::black] :interrogatives [::who ::who]})
 
                          (macros/def-nodes supply
                            map->Intersection-nodes
-                           {:name "調達" :colors [::white ::black]})
+                           {:name "調達" :colors [::white ::black] :interrogatives [::who ::where]})
 
                          (macros/def-nodes expediency
                            map->Intersection-nodes
-                           {:name "方便" :colors [::white ::black]})
+                           {:name "方便" :colors [::white ::black] :interrogatives [::how ::who]})
 
+                         ;; This is "工夫" in illustartion.
                          (macros/def-nodes ingenuity
                            map->Intersection-nodes
-                           {:name "創意" :colors [::blue ::red]})
+                           {:name "創意" :colors [::blue ::red] :interrogatives [::what ::how]})
 
                          (macros/def-nodes inspiration
                            map->Intersection-nodes
-                           {:name "着想" :colors [::blue ::red]})
+                           {:name "着想" :colors [::blue ::red] :interrogatives [::when ::when]})
 
+                         ;; This is "試行" in illustration.
                          (macros/def-nodes experiment
                            map->Intersection-nodes
-                           {:name "実験" :colors [::blue ::red]})
+                           {:name "実験" :colors [::blue ::red] :interrogatives [::when ::how]})
 
                          (macros/def-nodes inquiry
                            map->Intersection-nodes
-                           {:name "追求" :colors [::blue ::red]})
+                           {:name "追求" :colors [::blue ::red] :interrogatives [::what ::when]})
 
                          (macros/def-nodes sturdiness
                            map->Intersection-nodes
-                           {:name "強健" :colors [::black ::green]})
+                           {:name "強健" :colors [::black ::green] :interrogatives [::who ::what]})
 
                          (macros/def-nodes territory
                            map->Intersection-nodes
-                           {:name "縄張り" :colors [::black ::green]})
+                           {:name "縄張" :colors [::black ::green] :interrogatives [::where ::where]})
 
                          (macros/def-nodes overwhelming
                            map->Intersection-nodes
-                           {:name "圧倒" :colors [::black ::green]})
+                           {:name "圧倒" :colors [::black ::green] :interrogatives [::where ::what]})
 
                          (macros/def-nodes preservation
                            map->Intersection-nodes
-                           {:name "温存" :colors [::black ::green]})
+                           {:name "温存" :colors [::black ::green] :interrogatives [::who ::where]})
 
                          (macros/def-nodes first-aid
                            map->Intersection-nodes
-                           {:name "救急" :colors [::red ::white]})
+                           {:name "救急" :colors [::red ::white] :interrogatives [::when ::who]})
 
-;; This variable name might be changed, because occasion may be not very match "臨機".
+                         ;; This variable name might be changed, because occasion may be not very match "臨機".
+                         ;; This is "機略" in illustration.
                          (macros/def-nodes occasion
                            map->Intersection-nodes
-                           {:name "臨機" :colors [::red ::white]})
+                           {:name "臨機" :colors [::red ::white] :interrogatives [::how ::how]})
 
                          (macros/def-nodes bravery
                            map->Intersection-nodes
-                           {:name "義勇" :colors [::red ::white]})
+                           {:name "義勇" :colors [::red ::white] :interrogatives [::how ::who]})
 
                          (macros/def-nodes swift
                            map->Intersection-nodes
-                           {:name "機敏" :colors [::red ::white]})
+                           {:name "機敏" :colors [::red ::white] :interrogatives [::when ::how]})
 
                          (macros/def-nodes observation
                            map->Intersection-nodes
-                           {:name "観察" :colors [::green ::blue]})
+                           {:name "観察" :colors [::green ::blue] :interrogatives [::where ::when]})
 
                          (macros/def-nodes formation
                            map->Intersection-nodes
-                           {:name "形成" :colors [::red ::white]})
-
+                           {:name "形成" :colors [::red ::white] :interrogatives [::what ::what]})
 
                          (macros/def-nodes prudence
                            map->Intersection-nodes
-                           {:name "慎重" :colors [::red ::white]})
+                           {:name "慎重" :colors [::red ::white] :interrogatives [::what ::when]})
 
                          (macros/def-nodes adaption
                            map->Intersection-nodes
-                           {:name "適応" :colors [::red ::white]})])
+                           {:name "適応" :colors [::red ::white] :interrogatives [::where ::what]})])
 
 ;; ---- Basis instances ----
 (declare peace perfection power freedom acceptance)
@@ -242,7 +249,7 @@
 (defn test-instances [instances]
   (println basis)
   (println nodes)
-  (println intersection-nodes)
-  )
+  (println intersection-nodes))
+  
 
 ;; need to add something to medified file
