@@ -220,7 +220,6 @@
                                            map->Intersection-nodes
                                            {:name "臨床" :colors [::red ::white]})])
 
-
 ;; ---- Basis instances ----
 (def basis [(macros/def-nodes peace
                               map->Basis
