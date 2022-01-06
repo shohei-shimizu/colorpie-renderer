@@ -14,43 +14,43 @@
 (declare consideration method reason becoming exploitment self-interest casualness frankness inherency harmony)
 (def nodes [(macros/def-nodes consideration
                               map->Nodes
-                              {:name "配慮" :colors [::white] :interrogative ::who})
+                              {:name "配慮" :colors [::white] :interrogatives [::who]})
 
             (macros/def-nodes method
                               map->Nodes
-                              {:name "定石" :colors [::white] :interrogative ::how})
+                              {:name "定石" :colors [::white] :interrogatives [::how]})
 
             (macros/def-nodes reason
                               map->Nodes
-                              {:name "理性" :colors [::blue] :interrogative ::when})
+                              {:name "理性" :colors [::blue] :interrogatives [::when]})
 
             (macros/def-nodes becoming
                               map->Nodes
-                              {:name "実現" :colors [::blue] :interrogative ::what})
+                              {:name "実現" :colors [::blue] :interrogatives [::what]})
 
             (macros/def-nodes exploitment
                               map->Nodes
-                              {:name "利用" :colors [::black] :interrogative ::where})
+                              {:name "利用" :colors [::black] :interrogatives [::where]})
 
             (macros/def-nodes self-interest
                               map->Nodes
-                               {:name "独尊" :colors [::black] :interrogative ::who})
+                               {:name "独尊" :colors [::black] :interrogatives [::who]})
 
             (macros/def-nodes casualness
                               map->Nodes
-                              {:name "即興" :colors [::red] :interrogative ::how})
+                              {:name "即興" :colors [::red] :interrogatives [::how]})
 
             (macros/def-nodes frankness
                               map->Nodes
-                              {:name "率直" :colors [::red] :interrogative ::when})
+                              {:name "率直" :colors [::red] :interrogatives [::when]})
 
             (macros/def-nodes inherency
                               map->Nodes
-                              {:name "生得" :colors [::green] :interrogative ::what})
+                              {:name "生得" :colors [::green] :interrogatives [::what]})
 
             (macros/def-nodes harmony
                               map->Nodes
-                              {:name "調和" :colors [::green] :interrogative ::where})])
+                              {:name "調和" :colors [::green] :interrogatives [::where]})])
 
 ;; ---- Intersection-nodes instances ----
 (declare construction recommendation conference training manipulation desire calculation reformation unfetteredness craving challenge delight feelings emergence throbbing emphathize affection healthness dedication derivation
