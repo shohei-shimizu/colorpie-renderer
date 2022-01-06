@@ -13,44 +13,44 @@
 ;; Define each 10 nodes about name, colors, and coordinate.
 (declare consideration method reason becoming exploitment self-interest casualness frankness inherency harmony)
 (def nodes [(macros/def-nodes consideration
-                              map->Nodes
-                              {:name "配慮" :colors [::white] :interrogatives [::who]})
+              map->Nodes
+              {:name "配慮" :colors [::white] :interrogatives [::who]})
 
             (macros/def-nodes method
-                              map->Nodes
-                              {:name "定石" :colors [::white] :interrogatives [::how]})
+              map->Nodes
+              {:name "定石" :colors [::white] :interrogatives [::how]})
 
             (macros/def-nodes reason
-                              map->Nodes
-                              {:name "理性" :colors [::blue] :interrogatives [::when]})
+              map->Nodes
+              {:name "理性" :colors [::blue] :interrogatives [::when]})
 
             (macros/def-nodes becoming
-                              map->Nodes
-                              {:name "実現" :colors [::blue] :interrogatives [::what]})
+              map->Nodes
+              {:name "実現" :colors [::blue] :interrogatives [::what]})
 
             (macros/def-nodes exploitment
-                              map->Nodes
-                              {:name "利用" :colors [::black] :interrogatives [::where]})
+              map->Nodes
+              {:name "利用" :colors [::black] :interrogatives [::where]})
 
             (macros/def-nodes self-interest
-                              map->Nodes
-                               {:name "独尊" :colors [::black] :interrogatives [::who]})
+              map->Nodes
+              {:name "独尊" :colors [::black] :interrogatives [::who]})
 
             (macros/def-nodes casualness
-                              map->Nodes
-                              {:name "即興" :colors [::red] :interrogatives [::how]})
+              map->Nodes
+              {:name "即興" :colors [::red] :interrogatives [::how]})
 
             (macros/def-nodes frankness
-                              map->Nodes
-                              {:name "率直" :colors [::red] :interrogatives [::when]})
+              map->Nodes
+              {:name "率直" :colors [::red] :interrogatives [::when]})
 
             (macros/def-nodes inherency
-                              map->Nodes
-                              {:name "生得" :colors [::green] :interrogatives [::what]})
+              map->Nodes
+              {:name "生得" :colors [::green] :interrogatives [::what]})
 
             (macros/def-nodes harmony
-                              map->Nodes
-                              {:name "調和" :colors [::green] :interrogatives [::where]})])
+              map->Nodes
+              {:name "調和" :colors [::green] :interrogatives [::where]})])
 
 ;; ---- Intersection-nodes instances ----
 (declare construction recommendation conference training manipulation desire calculation reformation unfetteredness craving challenge delight feelings emergence throbbing emphathize affection healthness dedication derivation
@@ -227,24 +227,24 @@
 ;; ---- Basis instances ----
 (declare peace perfection power freedom acceptance)
 (def basis [(macros/def-nodes peace
-                              map->Basis
-                              {:name "平和" :nodes [consideration method] :colors [::white]})
-            
+              map->Basis
+              {:name "平和" :nodes [consideration method] :colors [::white]})
+
             (macros/def-nodes perfection
-                              map->Basis
-                              {:name "完全" :nodes [consideration method] :colors [::blue]})
-            
+              map->Basis
+              {:name "完全" :nodes [consideration method] :colors [::blue]})
+
             (macros/def-nodes power
-                              map->Basis
-                              {:name "実力" :nodes [consideration method] :colors [::black]})
-            
+              map->Basis
+              {:name "実力" :nodes [consideration method] :colors [::black]})
+
             (macros/def-nodes freedom
-                              map->Basis
-                              {:name "自由" :nodes [consideration method] :colors [::red]})
-            
+              map->Basis
+              {:name "自由" :nodes [consideration method] :colors [::red]})
+
             (macros/def-nodes acceptance
-                              map->Basis
-                              {:name "受容" :nodes [consideration method] :colors [::green]})])
+              map->Basis
+              {:name "受容" :nodes [consideration method] :colors [::green]})])
 
 (defn test-instances []
   (println basis)
