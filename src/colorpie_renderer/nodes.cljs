@@ -246,10 +246,7 @@
                               map->Basis
                               {:name "受容" :nodes [consideration method] :colors [::green]})])
 
-(defn test-instances [instances]
+(defn test-instances []
   (println basis)
   (println nodes)
   (println intersection-nodes))
-  
-
-;; need to add something to medified file
