@@ -56,5 +56,4 @@
 
 ;; Test codes which check data generation though access record field
 (defn test-accesscheck []
-  (println (isa? ::white (first ((:colors ;;something
-                                  ))))))
+  (println (isa? ::white (first ((:colors reason))))))
