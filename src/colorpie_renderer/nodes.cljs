@@ -1,5 +1,5 @@
 (ns colorpie-renderer.nodes
-  (:require-macros [colorpie-renderer.node-macros :as macros]))
+  (:require-macros [colorpie-renderer.nodemacros :as macros]))
 
 ;; Basis are union for Nodes. It is standard 5 elements which is base for 10 nodes.
 (defrecord Basis [name nodes colors coordinate])
