@@ -50,10 +50,10 @@
 
 
 ;; Test codes which generate outputs in line
-(defn test-sets
+(defn test-sets []
   (println intersection-sets)
   (println relation-sets-nodes))
 
 ;; Test codes which check data generation though access record field
-(defn test-accesscheck
+(defn test-accesscheck []
   (println (isa? ::white (first ((:colors nodes/reason))))))
