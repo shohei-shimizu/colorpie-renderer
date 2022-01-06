@@ -1,10 +1,10 @@
 (ns colorpie-renderer.sets
   (:require [colorpie-renderer.nodes :as nodes])
-  (:require-macros [colorpie-renderer.sets-macros :as macros]))
+  (:require-macros [colorpie-renderer.setmacros :as macros]))
 
 ;; This is what collects 4 intersections. It expressions multiple color union.
 (defrecord Intersection-sets [name nodes])
-;; To avoid that calva say xxxx unresolved.
+;; To avoid that calva says xxxx unresolved.
 (declare promotion arbitrariness individuality sensitiveness continuity convinience creation outliving enforcement clinical)
 
 (def intersection-sets
@@ -38,3 +38,12 @@
    (macros/def-sets clinical
      map->Intersection-sets {:name "臨床"
                              :nodes [nodes/observation nodes/formation nodes/prudence nodes/adaption]})])
+
+(defn remove-same-keys [key coll]
+  (let [f (fn [key-1 key-2] (not= (first (key key-1))
+                                  (first (key key-2))))
+        g (fn [x c] (into [] (concat [x] (filterv #(f x %) c))))
+        h (fn [c] (mapv #(g % c) c))]
+    (h coll)))
+
+(def relation-sets-nodes (remove-same-keys :colors nodes/nodes))

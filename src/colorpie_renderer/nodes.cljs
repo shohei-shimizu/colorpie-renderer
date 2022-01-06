@@ -1,4 +1,5 @@
-(ns colorpie-renderer.nodes)
+(ns colorpie-renderer.nodes
+  (:require-macros [colorpie-renderer.nodemacros :as macros]))
 
 ;; Basis are union for Nodes. It is standard 5 elements which is base for 10 nodes.
 (defrecord Basis [name nodes colors coordinate])
@@ -10,190 +11,112 @@
 
 ;; ---- Nodes instances ----
 ;; Define each 10 nodes about name, colors, and coordinate.
-(def consideration
-  (map->Nodes
-   {:name "配慮"
-    :colors [::white]
-    :interrogative ::who
-    :coordinate [0 0]}))
+;; To avoid calva says xxxx unresolved.
+(declare consideration method reason becoming exploitment self-interest casualness frankness inherency harmony)
 
-(def method
-  (map->Nodes
-   {:name "定石"
-    :colors [::white]
-    :interrogative ::how
-    :coordinate [0 0]}))
+(def nodes [(macros/def-nodes consideration
+                              map->Nodes
+                              {:name "配慮" :colors [::white] :interrogative ::who})
 
-(def reason
-  (map->Nodes
-   {:name "理性"
-    :colors [::blue]
-    :interrogative ::when
-    :coordinate [0 0]}))
+            (macros/def-nodes method
+                              map->Nodes
+                              {:name "定石" :colors [::white] :interrogative ::how})
 
-(def becoming
-  (map->Nodes
-   {:name "実現"
-    :colors [::blue]
-    :interrogative ::what
-    :coordinate [0 0]}))
+            (macros/def-nodes reason
+                              map->Nodes
+                              {:name "理性" :colors [::blue] :interrogative ::when})
 
-(def exploitment
-  (map->Nodes
-   {:name "利用"
-    :colors [::black]
-    :interrogative ::where
-    :coordinate [0 0]}))
+            (macros/def-nodes becoming
+                              map->Nodes
+                              {:name "実現" :colors [::blue] :interrogative ::what})
 
-(def self-interest
-  (map->Nodes
-   {:name "独尊"
-    :colors [::black]
-    :interrogative ::who
-    :coordinate [0 0]}))
+            (macros/def-nodes exploitment
+                              map->Nodes
+                              {:name "利用" :colors [::black] :interrogative ::where})
 
-(def casualness
-  (map->Nodes
-   {:name "即興"
-    :colors [::red]
-    :interrogative ::how
-    :coordinate [0 0]}))
+            (macros/def-nodes self-interest
+                              map->Nodes
+                               {:name "独尊" :colors [::black] :interrogative ::who})
 
-(def frankness
-  (map->Nodes
-   {:name "率直"
-    :colors [::red]
-    :interrogative ::when
-    :coordinate [0 0]}))
+            (macros/def-nodes casualness
+                              map->Nodes
+                              {:name "即興" :colors [::red] :interrogative ::how})
 
-(def inherency
-  (map->Nodes
-   {:name "生得"
-    :colors [::green]
-    :interrogative ::what
-    :coordinate [0 0]}))
+            (macros/def-nodes frankness
+                              map->Nodes
+                              {:name "率直" :colors [::red] :interrogative ::when})
 
-(def harmony
-  (map->Nodes
-   {:name "調和"
-    :colors [::green]
-    :interrogative ::where
-    :coordinate [0 0]}))
+            (macros/def-nodes inherency
+                              map->Nodes
+                              {:name "生得" :colors [::green] :interrogative ::what})
+
+            (macros/def-nodes harmony
+                              map->Nodes
+                              {:name "調和" :colors [::green] :interrogative ::where})
+                              ])
+
 
 ;; ---- Intersection-nodes instances ----
-(def construction
-  (map->Intersection-nodes
-   {:name "設計"
-    :colors [::white ::blue]
-    :coordinate [0 0]}))
-
-(def recommendation
-  (map->Intersection-nodes
-   {:name "奨励"
-    :colors [::white ::blue]
-    :coordinate [0 0]}))
-
-(def conference
-  (map->Intersection-nodes
-   {:name "協議"
-    :colors [::white ::blue]
-    :coordinate [0 0]}))
-
-(def training
-  (map->Intersection-nodes
-   {:name "訓練"
-    :colors [::white ::blue]
-    :coordinate [0 0]}))
-
-(def manipulation
-  (map->Intersection-nodes
-   {:name "操作"
-    :colors [::blue ::black]
-    :coordinate [0 0]}))
-
-(def desire
-  (map->Intersection-nodes
-   {:name "志望"
-    :colors [::blue ::black]
-    :coordinate [0 0]}))
-
-(def calculation
-  (map->Intersection-nodes
-   {:name "計算"
-    :colors [::blue ::black]
-    :coordinate [0 0]}))
-
-(def reformation
-  (map->Intersection-nodes
-   {:name "改変"
-    :colors [::blue ::black]
-    :coordinate [0 0]}))
-
-(def unfetteredness
-  (map->Intersection-nodes
-   {:name "不羈"
-    :colors [::black ::red]
-    :coordinate [0 0]}))
-
-(def craving
-  (map->Intersection-nodes
-   {:name "渇望"
-    :colors [::black ::red]
-    :coordinate [0 0]}))
-
-(def challenge
-  (map->Intersection-nodes
-   {:name "挑戦"
-    :colors [::black ::red]
-    :coordinate [0 0]}))
-
-(def delight
-  (map->Intersection-nodes
-   {:name "愉悦"
-    :colors [::black ::red]
-    :coordinate [0 0]}))
-
-(def feelings
-  (map->Intersection-nodes
-   {:name "随感"
-    :colors [::red ::green]
-    :coordinate [0 0]}))
-
-(def emergence
-  (map->Intersection-nodes
-   {:name "創発"
-    :colors [::red ::green]
-    :coordinate [0 0]}))
-
-(def throbbing
-  (map->Intersection-nodes
-   {:name "躍動"
-    :colors [::red ::green]
-    :coordinate [0 0]}))
-
-(def emphathize
-  (map->Intersection-nodes
-   {:name "震撼"
-    :colors [::red ::green]
-    :coordinate [0 0]}))
-
-(def affection
-  (map->Intersection-nodes
-   {:name "親愛"
-    :colors [::green ::white]
-    :coordinate [0 0]}))
-
-(def healthness
-  (map->Intersection-nodes
-   {:name "健康"
-    :colors [::green ::white]
-    :coordinate [0 0]}))
-
-(def dedication
-  (map->Intersection-nodes
-   {:name "献身"
-    :colors [::green ::white]
-    :coordinate [0 0]}))
+;; To avoid calva says xxxx unresolved.
+(declare construction recommendation conference training manipulation desire calculation reformation unfetteredness craving challenge delight feelings emergence throbbing emphathize affection healthness dedication)
+(def intersection-nodes [(macros/def-nodes construction
+                                           map->Intersection-nodes
+                                           {:name "設計" :colors [::white ::blue]})
+                         (macros/def-nodes recommendation
+                                           map->Intersection-nodes
+                                           {:name "奨励" :colors [::white ::blue]})
+                         (macros/def-nodes conference
+                                           map->Intersection-nodes
+                                           {:name "協議" :colors [::white ::blue]})
+                         (macros/def-nodes training
+                                           map->Intersection-nodes
+                                           {:name "訓練" :colors [::white ::blue]})
+                         (macros/def-nodes manipulation
+                                           map->Intersection-nodes
+                                           {:name "操作" :colors [::blue ::black]})
+                         (macros/def-nodes desire
+                                           map->Intersection-nodes
+                                           {:name "志望" :colors [::blue ::black]})
+                         (macros/def-nodes calculation
+                                           map->Intersection-nodes
+                                           {:name "計算" :colors [::blue ::black]})
+                         (macros/def-nodes reformation
+                                           map->Intersection-nodes
+                                           {:name "改変" :colors [::blue ::black]})
+                         (macros/def-nodes unfetteredness
+                                           map->Intersection-nodes
+                                           {:name "不羈" :colors [::black ::red]})
+                         (macros/def-nodes craving
+                                           map->Intersection-nodes
+                                           {:name "渇望" :colors [::black ::red]})
+                         (macros/def-nodes challenge
+                                           map->Intersection-nodes
+                                           {:name "挑戦" :colors [::black ::red]})
+                         (macros/def-nodes delight
+                                           map->Intersection-nodes
+                                           {:name "愉悦" :colors [::black ::red]})
+                         (macros/def-nodes feelings
+                                           map->Intersection-nodes
+                                           {:name "随感" :colors [::red ::green]})
+                         (macros/def-nodes emergence
+                                           map->Intersection-nodes
+                                           {:name "創発" :colors [::red ::green]})
+                         (macros/def-nodes throbbing
+                                           map->Intersection-nodes
+                                           {:name "躍動" :colors [::red ::green]})
+                         (macros/def-nodes emphathize
+                                           map->Intersection-nodes
+                                           {:name "震撼" :colors [::red ::green]})
+                         (macros/def-nodes affection
+                                           map->Intersection-nodes
+                                           {:name "親愛" :colors [::green ::white]})
+                         (macros/def-nodes healthness
+                                           map->Intersection-nodes
+                                           {:name "健康" :colors [::green ::white]})
+                         (macros/def-nodes dedication
+                                           map->Intersection-nodes
+                                           {:name "献身" :colors [::green ::white]})
+])
 
 (def derivation
   (map->Intersection-nodes
