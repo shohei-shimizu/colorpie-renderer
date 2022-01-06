@@ -56,5 +56,5 @@
 
 ;; Test codes which check data generation though access record field
 (defn test-accesscheck []
-  (println (isa? :colorpie-renderer.nodes/blue (first 
-                          (:colors nodes/reason)))))
+  (println (isa? :colorpie-renderer.nodes/blue
+                 (first (:colors nodes/reason)))))
