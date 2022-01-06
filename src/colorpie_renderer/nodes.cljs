@@ -12,23 +12,13 @@
 ;; ---- Nodes instances ----
 ;; Define each 10 nodes about name, colors, and coordinate.
 
-(macros/def-nodes consideration
-  map->Nodes
-  {:name "配慮" :colors [::white] :interrogative ::who})
+(def nodes [(macros/def-nodes consideration
+                              map->Nodes
+                              {:name "配慮" :colors [::white] :interrogative ::who})
 
-(def consideration
-  (map->Nodes
-  {:name "配慮"
-    :colors [::white]
-    :interrogative ::who
-    :coordinate [0 0]}))
-
-(def method
-  (map->Nodes
-   {:name "定石"
-    :colors [::white]
-    :interrogative ::how
-    :coordinate [0 0]}))
+            (macros/def-nodes method
+                              map->Nodes
+                              {:name "定石" :colors [::white] :interrogative ::how})])
 
 (def reason
   (map->Nodes
