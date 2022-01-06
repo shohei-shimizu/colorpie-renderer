@@ -1,4 +1,4 @@
-(ns colorpie-renderer.macros)
+(ns colorpie-renderer.node-macros)
 
 (defmacro def-nodes [x y z]
  `(do
