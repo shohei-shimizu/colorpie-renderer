@@ -10,6 +10,15 @@
 
 ;; ---- Nodes instances ----
 ;; Define each 10 nodes about name, colors, and coordinate.
+
+(defmacro def-return [name expr]
+  `((def ~name ~@expr)
+    ~@expr))
+
+(macroexpand
+ '(def-return
+   'consideration (map->Nodes {:name "配慮" :colors [::white] :interrogative ::who})))
+
 (def consideration
   (map->Nodes
    {:name "配慮"
