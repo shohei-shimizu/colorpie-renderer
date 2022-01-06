@@ -322,12 +322,6 @@
     :colors [::red ::white]
     :coordinate [0 0]}))
 
-(def clinical
-  (map->Intersection-nodes
-   {:name "臨床"
-    :colors [::red ::white]
-    :coordinate [0 0]}))
-
 ;; ---- Basis instances ----
 (def peace
   (map->Basis
