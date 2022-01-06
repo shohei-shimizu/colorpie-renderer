@@ -11,6 +11,8 @@
 
 ;; ---- Nodes instances ----
 ;; Define each 10 nodes about name, colors, and coordinate.
+;; To avoid calva says xxxx unresolved.
+(declare consideration method reason becoming exploitment self-interest casualness frankness inherency harmony)
 
 (def nodes [(macros/def-nodes consideration
                               map->Nodes
@@ -55,6 +57,8 @@
 
 
 ;; ---- Intersection-nodes instances ----
+;; To avoid calva says xxxx unresolved.
+(declare construction recommendation conference training manipulation desire calculation reformation unfetteredness craving challenge delight feelings emergence throbbing emphathize affection healthness dedication)
 (def intersection-nodes [(macros/def-nodes construction
                                            map->Intersection-nodes
                                            {:name "設計" :colors [::white ::blue]})
