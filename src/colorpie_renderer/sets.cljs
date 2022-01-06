@@ -38,3 +38,10 @@
    (macros/def-sets clinical
      map->Intersection-sets {:name "臨床"
                              :nodes [nodes/observation nodes/formation nodes/prudence nodes/adaption]})])
+
+(defn remove-some-colors [coll]
+  (let [f (fn [key-1 key-2] (not= (first (:colors key-1))
+                                  (first (:colors key-2))))
+        g (fn [x c] (filter #(f x %) c))
+        h (fn [c] (map #(g % c) c))]
+    (h coll)))
