@@ -18,10 +18,12 @@ var obj__$1 = obj;
 var protos = cljs.core.PersistentVector.EMPTY;
 while(true){
 if(cljs.core.truth_(obj__$1)){
+
 var G__10493 = Object.getPrototypeOf(obj__$1);
 var G__10494 = cljs.core.conj.call(null,protos,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"obj","obj",981763962),obj__$1,new cljs.core.Keyword(null,"props","props",453281727),cider.nrepl.inlined_deps.suitable.v0v4v0.suitable.js_introspection.own_property_descriptors.call(null,obj__$1)], null));
 obj__$1 = G__10493;
 protos = G__10494;
+
 continue;
 } else {
 return protos;
@@ -30,8 +32,10 @@ break;
 }
 });
 cider.nrepl.inlined_deps.suitable.v0v4v0.suitable.js_introspection.property_names_and_types = (function cider$nrepl$inlined_deps$suitable$v0v4v0$suitable$js_introspection$property_names_and_types(var_args){
+
 var G__10496 = arguments.length;
 switch (G__10496) {
+
 case 1:
 return cider.nrepl.inlined_deps.suitable.v0v4v0.suitable.js_introspection.property_names_and_types.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -52,6 +56,7 @@ return cider.nrepl.inlined_deps.suitable.v0v4v0.suitable.js_introspection.proper
 
 (cider.nrepl.inlined_deps.suitable.v0v4v0.suitable.js_introspection.property_names_and_types.cljs$core$IFn$_invoke$arity$2 = (function (js_obj,prefix){
 var seen = cljs.core.transient$.call(null,cljs.core.PersistentHashSet.EMPTY);
+
 var iter__4529__auto__ = (function cider$nrepl$inlined_deps$suitable$v0v4v0$suitable$js_introspection$iter__10497(s__10498){
 return (new cljs.core.LazySeq(null,(function (){
 var s__10498__$1 = s__10498;
@@ -84,6 +89,7 @@ if((i__10501 < size__4528__auto__)){
 var key = cljs.core._nth.call(null,c__4527__auto__,i__10501);
 if(((cljs.core.not.call(null,cljs.core.get.call(null,seen,key))) && (((cljs.core.empty_QMARK_.call(null,prefix)) || (clojure.string.starts_with_QMARK_.call(null,key,prefix)))))){
 cljs.core.chunk_append.call(null,b__10502,(function (){var prop = goog.object.get(props,key);
+
 cljs.core.conj_BANG_.call(null,seen,key);
 
 return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"name","name",1843675177),key,new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),i,new cljs.core.Keyword(null,"type","type",1174270348),(function (){try{var temp__5751__auto__ = (function (){var or__4126__auto__ = goog.object.get(prop,"value");
@@ -103,15 +109,18 @@ return "var";
 } else {
 return "var";
 }
+
 }catch (e10508){if((e10508 instanceof Error)){
 var e = e10508;
 return "var";
 } else {
 throw e10508;
 
+
 }
 }})()], null);
 })());
+
 
 var G__10511 = (i__10501 + (1));
 i__10501 = G__10511;
@@ -119,6 +128,7 @@ continue;
 } else {
 var G__10512 = (i__10501 + (1));
 i__10501 = G__10512;
+
 continue;
 }
 } else {
@@ -127,12 +137,14 @@ return true;
 break;
 }
 })()){
+
 return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__10502),cider$nrepl$inlined_deps$suitable$v0v4v0$suitable$js_introspection$iter__10497_$_iter__10499.call(null,cljs.core.chunk_rest.call(null,s__10500__$2)));
 } else {
 return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__10502),null);
 }
 } else {
 var key = cljs.core.first.call(null,s__10500__$2);
+
 if(((cljs.core.not.call(null,cljs.core.get.call(null,seen,key))) && (((cljs.core.empty_QMARK_.call(null,prefix)) || (clojure.string.starts_with_QMARK_.call(null,key,prefix)))))){
 return cljs.core.cons.call(null,(function (){var prop = goog.object.get(props,key);
 cljs.core.conj_BANG_.call(null,seen,key);
@@ -154,6 +166,7 @@ return "var";
 } else {
 return "var";
 }
+
 }catch (e10509){if((e10509 instanceof Error)){
 var e = e10509;
 return "var";
@@ -166,6 +179,7 @@ throw e10509;
 } else {
 var G__10513 = cljs.core.rest.call(null,s__10500__$2);
 s__10500__$1 = G__10513;
+
 continue;
 }
 }
@@ -174,6 +188,7 @@ return null;
 }
 break;
 }
+
 });})(s__10498__$1,vec__10503,i,map__10506,map__10506__$1,obj,props,xs__6308__auto__,temp__5753__auto__,seen))
 ,null,null));
 });})(s__10498__$1,vec__10503,i,map__10506,map__10506__$1,obj,props,xs__6308__auto__,temp__5753__auto__,seen))
@@ -184,6 +199,7 @@ return cljs.core.concat.call(null,fs__4526__auto__,cider$nrepl$inlined_deps$suit
 } else {
 var G__10514 = cljs.core.rest.call(null,s__10498__$1);
 s__10498__$1 = G__10514;
+
 continue;
 }
 } else {
