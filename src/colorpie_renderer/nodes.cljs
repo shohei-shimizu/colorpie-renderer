@@ -1,4 +1,5 @@
-(ns colorpie-renderer.nodes)
+(ns colorpie-renderer.nodes
+  (:require-macros [colorpie-renderer.macros :as macros]))
 
 ;; Basis are union for Nodes. It is standard 5 elements which is base for 10 nodes.
 (defrecord Basis [name nodes colors coordinate])
@@ -11,17 +12,13 @@
 ;; ---- Nodes instances ----
 ;; Define each 10 nodes about name, colors, and coordinate.
 
-(defmacro def-return [name expr]
-  `((def ~name ~@expr)
-    ~@expr))
-
-(macroexpand
- '(def-return
-   'consideration (map->Nodes {:name "配慮" :colors [::white] :interrogative ::who})))
+(macros/def-nodes consideration
+  map->Nodes
+  {:name "配慮" :colors [::white] :interrogative ::who})
 
 (def consideration
   (map->Nodes
-   {:name "配慮"
+  {:name "配慮"
     :colors [::white]
     :interrogative ::who
     :coordinate [0 0]}))
