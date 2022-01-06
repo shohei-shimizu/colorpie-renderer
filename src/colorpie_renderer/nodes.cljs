@@ -240,7 +240,9 @@
                               {:name "受容" :nodes [consideration method] :colors [::green]})])
 
 (defn test-instances [instances]
-  ;; write some expression here.
+  (println basis)
+  (println nodes)
+  (println intersection-nodes)
   )
 
 ;; need to add something to medified file
