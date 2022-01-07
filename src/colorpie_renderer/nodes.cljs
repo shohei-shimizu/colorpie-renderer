@@ -214,15 +214,15 @@
 
                          (macros/def-nodes formation
                            map->Intersection-nodes
-                           {:name "形成" :colors [::red ::white] :interrogatives [::what ::what]})
+                           {:name "形成" :colors [::green ::blue] :interrogatives [::what ::what]})
 
                          (macros/def-nodes prudence
                            map->Intersection-nodes
-                           {:name "慎重" :colors [::red ::white] :interrogatives [::what ::when]})
+                           {:name "慎重" :colors [::green ::blue] :interrogatives [::what ::when]})
 
                          (macros/def-nodes adaption
                            map->Intersection-nodes
-                           {:name "適応" :colors [::red ::white] :interrogatives [::where ::what]})])
+                           {:name "適応" :colors [::green ::blue] :interrogatives [::where ::what]})])
 
 ;; ---- Basis instances ----
 (declare peace perfection power freedom acceptance)
