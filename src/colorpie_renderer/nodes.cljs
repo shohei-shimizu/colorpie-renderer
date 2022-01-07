@@ -222,9 +222,9 @@
            (f (first b) (fnext b))
            (f (first c) (fnext c)))))))
 
-(let [f (fn [k] (map #(k %) intersection-nodes))]
+(let [f (fn [k c] (map #(k %) c))]
 
   (defn test-fields
     "This is what prints some datas in pretty format."
-    ([mode]
-     (doseq [x (f mode)] (println x)))))
+    ([key coll]
+     (doseq [x (f key coll)] (println x)))))
