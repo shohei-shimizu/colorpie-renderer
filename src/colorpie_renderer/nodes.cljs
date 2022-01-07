@@ -198,6 +198,8 @@
    (macros/def-nodes acceptance
      map->Basis {:name "受容" :nodes [consideration method] :colors [::green]})])
 
+
+;; ---- Test codes ----
 (let [f (fn [str coll]
           (println str)
           (doseq [x coll] (println x)))
