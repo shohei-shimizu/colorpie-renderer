@@ -47,3 +47,14 @@
     (h coll)))
 
 (def relation-sets-nodes (remove-same-keys :colors nodes/nodes))
+
+
+;; Test codes which generate outputs in line
+(defn test-sets []
+  (println intersection-sets)
+  (println relation-sets-nodes))
+
+;; Test codes which check data generation though access record field
+(defn test-accesscheck []
+  (println (isa? :colorpie-renderer.nodes/blue
+                 (first (:colors nodes/reason)))))
