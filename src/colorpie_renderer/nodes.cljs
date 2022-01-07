@@ -2,9 +2,9 @@
   (:require-macros [colorpie-renderer.macros.nodes :as macros]))
 
 ;; Basis are union for Nodes. It is standard 5 elements which is base for 10 nodes.
-(defrecord Basis [name nodes colors coordinate])
+(defrecord Basis [name nodes colors])
 
-(defrecord Nodes [name colors interrogative coordinate])
+(defrecord Nodes [name colors interrogatives])
 
 ;; Intersection-nodes are composition for double Nodes.
 (defrecord Intersection-nodes [name colors coordinate])
