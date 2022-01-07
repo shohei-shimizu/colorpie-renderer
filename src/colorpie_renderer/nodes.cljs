@@ -93,8 +93,8 @@
      map->Intersection-nodes
      {:name "改変" :colors [::blue ::black] :interrogatives [::what ::who]})
 
-                         ;; In here, "不羈" does not apear illustration. It's in just documentation.
-                         ;; It is "放縦" in illustration.
+   ;; In here, "不羈" does not apear illustration. It's in just documentation.
+   ;; It is "放縦" in illustration.
    (macros/def-nodes unfetteredness
      map->Intersection-nodes
      {:name "不羈" :colors [::black ::red] :interrogatives [::who ::how]})
@@ -111,7 +111,7 @@
      map->Intersection-nodes
      {:name "愉悦" :colors [::black ::red] :interrogatives [::who ::when]})
 
-                         ;; This is "感触" in illustration.
+   ;; This is "感触" in illustration.
    (macros/def-nodes feelings
      map->Intersection-nodes
      {:name "随感" :colors [::red ::green] :interrogatives [::when ::what]})
@@ -124,7 +124,7 @@
      map->Intersection-nodes
      {:name "躍動" :colors [::red ::green] :interrogatives [::how ::what]})
 
-                         ;; This is "共感" in illustration.
+   ;; This is "共感" in illustration.
    (macros/def-nodes emphathize
      map->Intersection-nodes
      {:name "震撼" :colors [::red ::green] :interrogatives [::when ::where]})
@@ -137,7 +137,7 @@
      map->Intersection-nodes
      {:name "健康" :colors [::green ::white] :interrogatives [::what ::how]})
 
-                         ;; This is "親身" in illustration.
+   ;; This is "親身" in illustration.
    (macros/def-nodes dedication
      map->Intersection-nodes
      {:name "献身" :colors [::green ::white] :interrogatives [::what ::who]})
@@ -162,7 +162,7 @@
      map->Intersection-nodes
      {:name "方便" :colors [::white ::black] :interrogatives [::how ::who]})
 
-                         ;; This is "工夫" in illustartion.
+   ;; This is "工夫" in illustartion.
    (macros/def-nodes ingenuity
      map->Intersection-nodes
      {:name "創意" :colors [::blue ::red] :interrogatives [::what ::how]})
@@ -171,7 +171,7 @@
      map->Intersection-nodes
      {:name "着想" :colors [::blue ::red] :interrogatives [::when ::when]})
 
-                         ;; This is "試行" in illustration.
+   ;; This is "試行" in illustration.
    (macros/def-nodes experiment
      map->Intersection-nodes
      {:name "実験" :colors [::blue ::red] :interrogatives [::when ::how]})
@@ -200,8 +200,8 @@
      map->Intersection-nodes
      {:name "救急" :colors [::red ::white] :interrogatives [::when ::who]})
 
-                         ;; This variable name might be changed, because occasion may be not very match "臨機".
-                         ;; This is "機略" in illustration.
+   ;; This variable name might be changed, because occasion may be not very match "臨機".
+   ;; This is "機略" in illustration.
    (macros/def-nodes occasion
      map->Intersection-nodes
      {:name "臨機" :colors [::red ::white] :interrogatives [::how ::how]})
