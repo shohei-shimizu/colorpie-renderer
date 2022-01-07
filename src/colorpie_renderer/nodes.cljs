@@ -7,7 +7,7 @@
 (defrecord Nodes [name colors interrogatives])
 
 ;; Intersection-nodes are composition for double Nodes.
-(defrecord Intersection-nodes [name colors])
+(defrecord Intersection-nodes [name colors interrogatives])
 
 ;; ---- Nodes instances ----
 ;; Define each 10 nodes about name, colors, and coordinate.
