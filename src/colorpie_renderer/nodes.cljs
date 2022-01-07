@@ -198,8 +198,9 @@
    (macros/def-nodes acceptance
      map->Basis {:name "受容" :nodes [consideration method] :colors [::green]})])
 
-(let [f #((println %1)
-          (doseq [x %2] (println x)))
+(let [f (fn [str coll]
+          (println str)
+          (doseq [x coll] (println x)))
       a ["basis: " basis]
       b ["nodes: " nodes]
       c ["intersection-nodes: " intersection-nodes]]
@@ -213,9 +214,17 @@
      (f (first c) (fnext c)))
 
     ([mode]
-     (cond (= mode :basis)              (f (first a) (fnext a))
-           (= mode :nodes)              (f (first b) (fnext b))
-           (= mode :intersection-nodes) (f (first c) (fnext c))
-           :else                        (do (f (first a) (fnext a))
-                                            (f (first b) (fnext b))
-                                            (f (first c) (fnext c)))))))
+     (case mode
+       :basis              (f (first a) (fnext a))
+       :nodes              (f (first b) (fnext b))
+       :intersection-nodes (f (first c) (fnext c))
+       (do (f (first a) (fnext a))
+           (f (first b) (fnext b))
+           (f (first c) (fnext c)))))))
+
+(let [f (fn [k] (map #(k %) intersection-nodes))]
+
+  (defn test-fields
+    "This is what prints some datas in pretty format."
+    ([mode]
+     (doseq [x (f mode)] (println x)))))
