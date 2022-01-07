@@ -46,6 +46,7 @@
         h (fn [c] (mapv #(g % c) c))]
     (h coll)))
 
+;; This is relation between nodes and other nodes.
 (def relation-sets-nodes (remove-same-keys :colors nodes/nodes))
 
 
