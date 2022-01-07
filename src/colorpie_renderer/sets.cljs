@@ -1,6 +1,6 @@
 (ns colorpie-renderer.sets
   (:require [colorpie-renderer.nodes :as nodes])
-  (:require-macros [colorpie-renderer.setmacros :as macros]))
+  (:require-macros [colorpie-renderer.macros.sets :as macros]))
 
 ;; This is what collects 4 intersections. It expressions multiple color union.
 (defrecord Intersection-sets [name nodes])
