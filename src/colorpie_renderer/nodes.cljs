@@ -198,9 +198,8 @@
    (macros/def-nodes acceptance
      map->Basis {:name "受容" :nodes [consideration method] :colors [::green]})])
 
-(let [f (fn [str coll]
-          (println str)
-          (doseq [x coll] (println x)))
+(let [f #((println %1)
+          (doseq [x %2] (println x)))
       a ["basis: " basis]
       b ["nodes: " nodes]
       c ["intersection-nodes: " intersection-nodes]]
