@@ -206,7 +206,8 @@
       c ["intersection-nodes: " intersection-nodes]]
 
   (defn test-instances
-    "This is what prints instances such as basis, nodes, and intersection-nodes."
+    "This is what prints instances such as basis, nodes, and intersection-nodes.
+  To use, send argument that is mode-keyword, for instance, :basis :nodes :inter-section-nodes"
     ([]
      (f (first a) (fnext a))
      (f (first b) (fnext b))
