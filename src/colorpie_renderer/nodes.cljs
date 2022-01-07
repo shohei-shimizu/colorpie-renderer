@@ -245,21 +245,19 @@
             (macros/def-nodes acceptance
               map->Basis
               {:name "受容" :nodes [consideration method] :colors [::green]})])
-(let [f (fn []
-          (println "basis: ")
-          (doseq [x basis] (println x)))
-      g (fn []
-          (println "nodes: ")
-          (doseq [x nodes] (println x)))
-      h (fn []
-          (println "intersection-nodes: ")
-          (doseq [x intersection-nodes] (println x)))]
+
+(let [f (fn [str coll]
+          (println str)
+          (doseq [x coll] (println x)))
+      a ["basis: " basis]
+      b ["nodes: " nodes]
+      c ["intersection-nodes: " intersection-nodes]]
   (defn test-instances
     "This is what prints instances such as basis, nodes, and intersection-nodes."
     ([]
-     (f) (g) (h))
+     (f (first a) (fnext a)) (f (first b) (fnext b)) (f (first c) (fnext c)))
     ([mode]
-     (cond (= mode :basis) (f)
-           (= mode :nodes) (g)
-           (= mode :intersection-nodes) (h)
-           :else (do (f) (g) (h))))))
+     (cond (= mode :basis) (f (first a) (fnext a))
+           (= mode :nodes) (f (first b) (fnext b))
+           (= mode :intersection-nodes) (f (first c) (fnext c))
+           :else (do (f (first a) (fnext a)) (f (first b) (fnext b)) (f (first c) (fnext c)))))))
