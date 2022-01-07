@@ -250,8 +250,8 @@
   "This is what prints instances such as basis, nodes, and intersection-nodes."
   []
   (println "basis: ")
-  (map (fn [x] (println x)) basis)
+  (doseq [x basis] (println x))
   (println "nodes: ")
-  (map (fn [x] (println x)) nodes)
-  (println "intersection-nodes")
-  (map (fn [x] (println x)) intersection-nodes))
+  (doseq [x nodes] (println x))
+  (println "intersection-nodes: ")
+  (doseq [x intersection-nodes] (println x)))
