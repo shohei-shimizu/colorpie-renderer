@@ -2,12 +2,12 @@
   (:require-macros [colorpie-renderer.macros.nodes :as macros]))
 
 ;; Basis are union for Nodes. It is standard 5 elements which is base for 10 nodes.
-(defrecord Basis [name nodes colors coordinate])
+(defrecord Basis [name nodes colors])
 
-(defrecord Nodes [name colors interrogative coordinate])
+(defrecord Nodes [name colors interrogatives])
 
 ;; Intersection-nodes are composition for double Nodes.
-(defrecord Intersection-nodes [name colors coordinate])
+(defrecord Intersection-nodes [name colors interrogatives])
 
 ;; ---- Nodes instances ----
 ;; Define each 10 nodes about name, colors, and coordinate.
@@ -198,8 +198,11 @@
    (macros/def-nodes acceptance
      map->Basis {:name "受容" :nodes [consideration method] :colors [::green]})])
 
-(let [f #((println %1)
-          (doseq [x %2] (println x)))
+
+;; ---- Test codes ----
+(let [f (fn [str coll]
+          (println str)
+          (doseq [x coll] (println x)))
       a ["basis: " basis]
       b ["nodes: " nodes]
       c ["intersection-nodes: " intersection-nodes]]
@@ -213,9 +216,17 @@
      (f (first c) (fnext c)))
 
     ([mode]
-     (cond (= mode :basis)              (f (first a) (fnext a))
-           (= mode :nodes)              (f (first b) (fnext b))
-           (= mode :intersection-nodes) (f (first c) (fnext c))
-           :else                        (do (f (first a) (fnext a))
-                                            (f (first b) (fnext b))
-                                            (f (first c) (fnext c)))))))
+     (case mode
+       :basis              (f (first a) (fnext a))
+       :nodes              (f (first b) (fnext b))
+       :intersection-nodes (f (first c) (fnext c))
+       (do (f (first a) (fnext a))
+           (f (first b) (fnext b))
+           (f (first c) (fnext c)))))))
+
+(let [f (fn [k c] (map #(k %) c))]
+
+  (defn test-fields
+    "This is what prints some datas in pretty format."
+    ([key coll]
+     (doseq [x (f key coll)] (println x)))))
