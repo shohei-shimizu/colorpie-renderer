@@ -39,7 +39,10 @@
      map->Intersection-sets {:name "臨床"
                              :nodes [nodes/observation nodes/formation nodes/prudence nodes/adaption]})])
 
-(defn remove-same-keys [key coll]
+(defn remove-same-keys
+  "This is what takes key and collection, and check 'Both elements in collection have same value?'
+and return collection that has not it."
+  [key coll]
   (let [f (fn [key-1 key-2] (not= (first (key key-1))
                                   (first (key key-2))))
         g (fn [x c] (into [] (concat [x] (filterv #(f x %) c))))
