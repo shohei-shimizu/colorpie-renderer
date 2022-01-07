@@ -247,6 +247,6 @@
               {:name "受容" :nodes [consideration method] :colors [::green]})])
 
 (defn test-instances []
-  (println basis)
-  (println nodes)
-  (println intersection-nodes))
+  (map (fn [x] (println x)) basis)
+  (map (fn [x] (println x)) nodes)
+  (map (fn [x] (println x)) intersection-nodes))
