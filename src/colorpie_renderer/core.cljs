@@ -1,4 +1,6 @@
-(ns colorpie-renderer.core)
+(ns colorpie-renderer.core
+  (:require [cljsjs.jquery :as jquery]
+            [cljsjs.d3 :as d3]))
 
 (def canvas (.getElementById js/document "canvas"))
 (def ctx (.getContext canvas "2d"))
