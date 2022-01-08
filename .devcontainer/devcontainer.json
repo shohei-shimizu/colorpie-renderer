@@ -1,6 +1,7 @@
 {
     "name": "clojure-script",
-    "image": "clojure",
+    // "image": "clojure",
+    "dockerFile" : "Dockerfile",
     "workspaceFolder": "/",
     "extensions": [
         "betterthantomorrow.calva"
