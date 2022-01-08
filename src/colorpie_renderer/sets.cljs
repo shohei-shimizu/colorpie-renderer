@@ -4,7 +4,7 @@
 
 ;; This is what collects 4 intersections. It expressions multiple color union.
 (defrecord Intersection-sets [name nodes])
-;; To avoid that calva says xxxx unresolved.
+;; To avoid calva saying xxxx unresolved.
 (declare promotion arbitrariness individuality sensitiveness continuity convinience creation outliving enforcement clinical)
 
 (def intersection-sets
