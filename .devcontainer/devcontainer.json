@@ -1,6 +1,7 @@
 {
     "name": "clojure-script",
-    "image": "clojure",
+    // "image": "clojure",
+    "dockerFile" : "Dockerfile", // Maybe this will work well.
     "workspaceFolder": "/",
     "extensions": [
         "betterthantomorrow.calva"
