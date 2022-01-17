@@ -13,10 +13,20 @@
 (.rect ctx 100 100 50 30)
 (.fill ctx)
 
-(doseq [n nodes/nodes]
+(let [f (fn [cls coll]
+          (doseq [n coll]
+            (-> js/d3
+                (.select "body")
+                (.append "div")
+                (.attr "id" (:en (:name n)))
+                (.classed cls true)
+                (.text (:jp (:name n))))))]
+
+  (f "basis" nodes/basis)
+  (f "nodes" nodes/nodes)
+  (f "intersection-nodes" nodes/intersection-nodes)
+  (f "intersection-sets" sets/intersection-sets)
+
   (-> js/d3
-      (.select "body")
-      (.append "div")
-      (.attr "id" (:en (:name n)))
-      (.classed "nodes" true)
-      (.text (:jp (:name n)))))
+      (.selectAll "div")
+      (.classed "elements" true)))
