@@ -17,4 +17,6 @@
   (-> js/d3
       (.select "body")
       (.append "div")
-      (.attr "id")))
+      (.attr "id" (:en (:name n)))
+      (.classed "nodes" true)
+      (.text (:jp (:name n)))))
