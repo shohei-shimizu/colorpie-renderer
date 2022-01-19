@@ -30,3 +30,22 @@
   (-> js/d3
       (.selectAll "div")
       (.classed "elements" true)))
+
+(def svg (-> js/d3
+             (.select "body")
+             (.append "svg")
+             (.attr "width" 200)
+             (.attr "height" 200)))
+(-> svg
+    (.append "circle")
+    (.attr "fill" "#FFD000")
+    (.attr "cx" 100)
+    (.attr "cy" 100)
+    (.attr "r" 95))
+(-> svg
+    (.append "text")
+    (.attr "x" 100)
+    (.attr "y" 100)
+    (.attr "text-anchor" "middle")
+    (.attr "dominant-baseline" "middle")
+    (.text "text"))
