@@ -1,6 +1,6 @@
 (ns colorpie-renderer.core
-  (:require [cljsjs.jquery :as jquery]
-            [cljsjs.d3 :as d3]
+  (:require [cljsjs.jquery]
+            [cljsjs.d3]
             [colorpie-renderer.nodes :as nodes]
             [colorpie-renderer.sets :as sets])
   (:require-macros [colorpie-renderer.macros.core :as macros]))
